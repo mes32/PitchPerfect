@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:PitchPerfect.xcodeproj">
+      location = "self:/Users/Onyi/Desktop/Udacity_Mike/iOS Apps/PitchPerfect/Pitch Perfect.xcodeproj">
    </FileRef>
 </Workspace>
