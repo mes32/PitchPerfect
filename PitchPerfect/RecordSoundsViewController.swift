@@ -61,9 +61,12 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder, successfully flag: Bool) {
         if (flag) {
-            recordedAudio = RecordedAudio()
-            recordedAudio.filePathUrl = recorder.url
-            recordedAudio.title = recorder.url.lastPathComponent
+            
+            let url:NSURL = recorder.url
+            let title:String = url.lastPathComponent!
+            //TODO: Not sure about the optional in the previous statement
+            recordedAudio = RecordedAudio.init(url: url, name: title)
+
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         } else {
             print("Audio recording to did not finish successfully")
