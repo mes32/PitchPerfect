@@ -25,9 +25,9 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sX-Yx-KM6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-JX-55k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording in Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbl-JX-55k">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
                                 <color key="textColor" white="0.54564664399999996" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,12 +38,20 @@
                                     <action selector="stopRecordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wnf-9T-HgM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oyu-JQ-XCZ">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
+                                <color key="textColor" white="0.54564664399999996" alpha="0.66000000000000003" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Oyu-JQ-XCZ" firstAttribute="top" secondItem="C34-nY-B7j" secondAttribute="bottom" constant="20" id="0tY-o7-Mw1"/>
                             <constraint firstItem="iuR-in-4Az" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jmo-uo-zE5"/>
+                            <constraint firstItem="Oyu-JQ-XCZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qfe-AT-ML7"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="iuR-in-4Az" secondAttribute="bottom" constant="40" id="f5N-CM-3ym"/>
-                            <constraint firstItem="wbl-JX-55k" firstAttribute="top" secondItem="C34-nY-B7j" secondAttribute="bottom" constant="30" id="mRk-AI-hIc"/>
+                            <constraint firstItem="wbl-JX-55k" firstAttribute="top" secondItem="C34-nY-B7j" secondAttribute="bottom" constant="20" id="mRk-AI-hIc"/>
                             <constraint firstItem="C34-nY-B7j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nby-x7-Ncm"/>
                             <constraint firstItem="C34-nY-B7j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o46-AO-DMF"/>
                             <constraint firstItem="wbl-JX-55k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yEC-rv-OPG"/>
@@ -53,14 +61,17 @@
                                 <exclude reference="C34-nY-B7j"/>
                                 <exclude reference="wbl-JX-55k"/>
                                 <exclude reference="iuR-in-4Az"/>
+                                <exclude reference="Oyu-JQ-XCZ"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="f5N-CM-3ym"/>
                                 <exclude reference="nby-x7-Ncm"/>
                                 <exclude reference="o46-AO-DMF"/>
-                                <exclude reference="Jmo-uo-zE5"/>
                                 <exclude reference="mRk-AI-hIc"/>
                                 <exclude reference="yEC-rv-OPG"/>
+                                <exclude reference="0tY-o7-Mw1"/>
+                                <exclude reference="Qfe-AT-ML7"/>
+                                <exclude reference="Jmo-uo-zE5"/>
+                                <exclude reference="f5N-CM-3ym"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -68,14 +79,17 @@
                                 <include reference="C34-nY-B7j"/>
                                 <include reference="wbl-JX-55k"/>
                                 <include reference="iuR-in-4Az"/>
+                                <include reference="Oyu-JQ-XCZ"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="f5N-CM-3ym"/>
                                 <include reference="nby-x7-Ncm"/>
                                 <include reference="o46-AO-DMF"/>
-                                <include reference="Jmo-uo-zE5"/>
                                 <include reference="mRk-AI-hIc"/>
                                 <include reference="yEC-rv-OPG"/>
+                                <include reference="0tY-o7-Mw1"/>
+                                <include reference="Qfe-AT-ML7"/>
+                                <include reference="Jmo-uo-zE5"/>
+                                <include reference="f5N-CM-3ym"/>
                             </mask>
                         </variation>
                     </view>
@@ -84,6 +98,7 @@
                         <outlet property="recordButton" destination="C34-nY-B7j" id="sna-C5-Dhh"/>
                         <outlet property="recordingInProgress" destination="wbl-JX-55k" id="3V1-qO-5oI"/>
                         <outlet property="stopButton" destination="iuR-in-4Az" id="K9X-XH-D63"/>
+                        <outlet property="tapToRecord" destination="Oyu-JQ-XCZ" id="OPD-9G-2Ce"/>
                         <segue destination="Z4C-MR-JC9" kind="show" identifier="stopRecording" id="665-ZF-ss9"/>
                     </connections>
                 </viewController>
