@@ -64,14 +64,14 @@
                                 <exclude reference="Oyu-JQ-XCZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="f5N-CM-3ym"/>
                                 <exclude reference="nby-x7-Ncm"/>
                                 <exclude reference="o46-AO-DMF"/>
-                                <exclude reference="mRk-AI-hIc"/>
-                                <exclude reference="yEC-rv-OPG"/>
+                                <exclude reference="Jmo-uo-zE5"/>
                                 <exclude reference="0tY-o7-Mw1"/>
                                 <exclude reference="Qfe-AT-ML7"/>
-                                <exclude reference="Jmo-uo-zE5"/>
-                                <exclude reference="f5N-CM-3ym"/>
+                                <exclude reference="mRk-AI-hIc"/>
+                                <exclude reference="yEC-rv-OPG"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -82,14 +82,14 @@
                                 <include reference="Oyu-JQ-XCZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="f5N-CM-3ym"/>
                                 <include reference="nby-x7-Ncm"/>
                                 <include reference="o46-AO-DMF"/>
-                                <include reference="mRk-AI-hIc"/>
-                                <include reference="yEC-rv-OPG"/>
+                                <include reference="Jmo-uo-zE5"/>
                                 <include reference="0tY-o7-Mw1"/>
                                 <include reference="Qfe-AT-ML7"/>
-                                <include reference="Jmo-uo-zE5"/>
-                                <include reference="f5N-CM-3ym"/>
+                                <include reference="mRk-AI-hIc"/>
+                                <include reference="yEC-rv-OPG"/>
                             </mask>
                         </variation>
                     </view>

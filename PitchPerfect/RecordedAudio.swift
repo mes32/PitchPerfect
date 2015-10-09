@@ -2,7 +2,7 @@
 //  RecordedAudio.swift
 //  Pitch Perfect
 //
-//  Created by Onyinyechukwu Uchime on 10/6/15.
+//  Created by Michael Stockman on 10/6/15.
 //  Copyright © 2015 Michael Stockman. All rights reserved.
 //
 

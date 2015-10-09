@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PitchPerfect
 //
-//  Created by Onyinyechukwu Uchime on 10/3/15.
+//  Created by Michael Stockman on 10/3/15.
 //  Copyright © 2015 Michael Stockman. All rights reserved.
 //
 
