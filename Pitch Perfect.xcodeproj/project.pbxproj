@@ -16,7 +16,6 @@
 		CB7113351BC0A0FE00128135 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7113341BC0A0FE00128135 /* PitchPerfectTests.swift */; };
 		CB7113401BC0A0FE00128135 /* PitchPerfectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71133F1BC0A0FE00128135 /* PitchPerfectUITests.swift */; };
 		CB71134F1BC0C70C00128135 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB71134E1BC0C70C00128135 /* PlaySoundsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		CB7113511BC0F35700128135 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB7113501BC0F35700128135 /* movie_quote.mp3 */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,6 @@
 		CB71133F1BC0A0FE00128135 /* PitchPerfectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectUITests.swift; sourceTree = "<group>"; };
 		CB7113411BC0A0FE00128135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB71134E1BC0C70C00128135 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		CB7113501BC0F35700128135 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../../../movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +106,6 @@
 				CB7113231BC0A0FE00128135 /* Main.storyboard */,
 				CB71134E1BC0C70C00128135 /* PlaySoundsViewController.swift */,
 				CB7113261BC0A0FE00128135 /* Assets.xcassets */,
-				CB7113501BC0F35700128135 /* movie_quote.mp3 */,
 				CB7113281BC0A0FE00128135 /* LaunchScreen.storyboard */,
 				CB71132B1BC0A0FE00128135 /* Info.plist */,
 				CB5E5E6B1BC409F400B400B1 /* RecordedAudio.swift */,
@@ -239,7 +236,6 @@
 			files = (
 				CB71132A1BC0A0FE00128135 /* LaunchScreen.storyboard in Resources */,
 				CB7113271BC0A0FE00128135 /* Assets.xcassets in Resources */,
-				CB7113511BC0F35700128135 /* movie_quote.mp3 in Resources */,
 				CB7113251BC0A0FE00128135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

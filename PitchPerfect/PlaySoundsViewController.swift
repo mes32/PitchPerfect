@@ -33,6 +33,8 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariableRate(1.5)
     }
     
+    @IBAction func playSoundReverb(sender: UIButton) {
+    }
     @IBAction func playSoundChipmunk(sender: UIButton) {
         playAudioWithVariablePitch(1000)
     }
@@ -46,14 +48,10 @@ class PlaySoundsViewController: UIViewController {
     }
     
     func setupAudioPlayer() {
-        if (recievedAudio == nil) {
-            print("Error in PlaySoundsViewController.swift setupAudioPlayer(). Variable 'recievedAudio' is nil.")
-        } else {
-            audioPlayer = try! AVAudioPlayer(contentsOfURL: recievedAudio.filePathUrl)
-            audioPlayer.enableRate = true
-            audioEngine = AVAudioEngine()
-            audioFile = try! AVAudioFile(forReading: recievedAudio.filePathUrl)
-        }
+        audioPlayer = try! AVAudioPlayer(contentsOfURL: recievedAudio.filePathUrl)
+        audioPlayer.enableRate = true
+        audioEngine = AVAudioEngine()
+        audioFile = try! AVAudioFile(forReading: recievedAudio.filePathUrl)
     }
     
     func resetAudioPlayer() {
