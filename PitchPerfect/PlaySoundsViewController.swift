@@ -32,9 +32,7 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func playSoundFast(sender: UIButton) {
         playAudioWithVariableRate(1.5)
     }
-    
-    @IBAction func playSoundReverb(sender: UIButton) {
-    }
+
     @IBAction func playSoundChipmunk(sender: UIButton) {
         playAudioWithVariablePitch(1000)
     }
@@ -70,6 +68,11 @@ class PlaySoundsViewController: UIViewController {
     func playAudioWithVariablePitch(pitch: Float){
         resetAudioPlayer()
         
+        
+        // I used a block of code I found on stackoverflow here:
+        // http://stackoverflow.com/questions/25333140/swift-using-sound-effects-with-audioengine
+        // START block
+        
         let audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
         
@@ -84,5 +87,7 @@ class PlaySoundsViewController: UIViewController {
         try! audioEngine.start()
         
         audioPlayerNode.play()
+        
+        // STOP block
     }
 }
